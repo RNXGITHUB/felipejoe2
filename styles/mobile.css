@@ -1,0 +1,133 @@
+header {
+    height: 320px;
+    margin-top: 70px;
+}
+
+nav {
+    position:absolute;
+    left:0;top:0;
+    width:100%;
+    height:70px;
+    background-color: #333;
+}
+/*imgem pquena do centro*/
+nav img {
+    width: 60px;
+    left: 50%;
+    margin-left: -35px;
+}
+
+/*botão da DIV menu quando a tela for dimensionada */
+nav div#menu-btn {
+    position: absolute;
+    display: block;
+    top:20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*configurar o menu com suas descrição*/
+nav ul#menu-desktop {
+    display: none;   
+}
+
+nav ul#menu-mobile {
+    margin-top:70px;
+    padding: 0;
+}
+
+nav ul#menu-mobile li {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+}
+/*configuração da aparência do texto e cor*/
+nav ul#menu-mobile li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    background-color: rgb(213,26,44);
+    padding: 20px 0;
+    border-bottom: 1px solid #111;
+
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.6;
+} 
+
+/*Alternancia do */
+main section#apresentacao {
+    width: 100%;
+}
+
+main section.pizzas, main section.centro, main section.direita {
+    width: 90%;
+    float: none;
+    margin: 15px auto;
+}
+
+
+/*teste*/
+
+
+header {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+
+
+
+section.slider-show {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 ;
+    overflow: hidden;
+}
+
+.slider-show-container {
+    width: 500%;
+    height: auto;
+    display: flex;
+}
+
+.slider-show-container input{
+    display: none;
+}
+
+.slider-box-images {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slider-box-images img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+#btn-slider1:checked ~ .nav-auto .btn-auto1, #btn-slider2:checked ~ .nav-auto .btn-auto2, #btn-slider3:checked ~ .nav-auto .btn-auto3{
+    background-color: #010175;
+}
+
+#btn-slider1:checked ~ .slidershow-one {
+    margin-left: 0%;
+}
+#btn-slider2:checked ~ .slidershow-two {
+    margin-left: -25%;
+}
+#btn-slider3:checked ~ .slidershow-three {
+    margin-left: -50%;
+}

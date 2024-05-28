@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Enjoy Cursos</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <link href="styles/estilo.css"            rel="stylesheet"/>
+        <link href="styles/mobile.css"            rel="stylesheet" media="screen and (min-width:300px) and (max-width:700px)">
+        <link href="styles/desktop.css"           rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="styles/transition.css">-->
+    
+
+    </head>
+    <body>
+        <nav>
+            <img src="images/logo_enjoycursos.png">
+            <ul id="menu-desktop">
+                <li><a href="">Início</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Serviços e Facilidades</a></li>
+                <li><a href="">Ajuda</a></li>
+            </ul>
+
+            <ul id="menu-mobile">
+                <li><a href="">Início</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Serviços e Facilidades</a></li>
+                <li><a href="">Ajuda</a></li>
+            </ul>
+
+                        <!--Botão da menu da DIV-->
+            <div id="menu-btn">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+                    <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+                    <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+                </svg>
+
+            </div>
+        </nav>    
+        <header>
+
+        </header>
+
+        <main>
+            <section id="apresentacao">
+                <section class="pizzas">
+                    <img src="images/slide-item1.png">
+                    <h3>Margueritta</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan ante at luctus condimentum. Aliquam mollis venenatis justo quis maximus.</p>
+                    <a href="">APENAS R$ 29,99</a>
+                </section>
+
+                <section class="pizzas centro">
+                    <img src="images/slide-item2.png">
+                    <h3>Calabresa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan ante at luctus condimentum. Aliquam mollis venenatis justo quis maximus.</p>
+                    <a href="">APENAS R$ 29,99</a>                    
+                </section>
+
+                <section class="pizzas direita">
+                    <img src="images/slide-item3.png">
+                    <h3>Brasileira</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan ante at luctus condimentum. Aliquam mollis venenatis justo quis maximus.</p>
+                    <a href="">APENAS R$ 29,99</a>                
+                </section>                
+            </section>
+        </main>        
+                
+        <script src="scripts/jquery.js"></script>
+        <script>
+            $(function() {
+                $("div#menu-btn").click(function() {
+                    $("nav ul#menu-mobile").toggle(); //apresentação do texto
+                });
+                    
+                $(window).resize(function() {       //tamanho da janela
+                    var largura = $(window).width(); 
+                    if ( largura >= 701 ) {
+                        $("nav ul#menu-mobile").hide();   //esconder o texto
+                    }
+                });
+            });
+        </script>
+
+    <script src="scripts/slidershow.js"></script>
+    </body>
+</html>
